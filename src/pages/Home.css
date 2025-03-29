@@ -1,0 +1,87 @@
+.home-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .headline {
+    font-size: 2.8rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+  
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .headline {
+      font-size: 2rem;
+    }
+  
+    .intro-text {
+      font-size: 1rem;
+    }
+  
+    .offers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+    
+
+  .contact-section {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background-color: #1a1a1d;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 8px 0;
+  }
+  
+  .contact-section a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-section .note {
+    margin-top: 20px;
+    font-style: italic;
+    color: #aaa;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .anchor-offset {
+    position: relative;
+    top: -80px; /* distance above target to offset sticky navbar */
+  }
+  
+    

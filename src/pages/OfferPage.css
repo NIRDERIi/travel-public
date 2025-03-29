@@ -1,0 +1,73 @@
+.offer-detail-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #1a1a1d;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    color: white;
+  }
+  
+  .offer-detail-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .offer-detail-container h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .offer-detail-container p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .offer-detail-container h3 {
+    color: #00ffff;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .booking-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .booking-form h4 {
+    font-size: 1.2rem;
+    color: #00ffff;
+  }
+  
+  .booking-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2a2a2d;
+    color: white;
+  }
+  
+  .booking-form button {
+    padding: 14px;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .booking-form button:hover {
+    background-color: #00cccc;
+  }
+  
