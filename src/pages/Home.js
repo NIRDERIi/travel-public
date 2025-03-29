@@ -4,7 +4,7 @@ import OfferCard from '../components/OfferCard';
 import Navbar from '../components/Navbar';
 import './Home.css';
 
-const API_URL = "https://travel-backend.onrender.com/api/offers";
+const API_URL = "https://travel-backend-hld3.onrender.com/api/offers";
 
 function Home() {
   const [offers, setOffers] = useState([]);
@@ -24,8 +24,7 @@ function Home() {
   
         <div id="offers" className="anchor-offset"></div>
 
-        
-        <div id="offers" className="offers-grid">
+        <div className="offers-grid">
           {offers.map(offer => (
             <OfferCard key={offer.id} offer={offer} />
           ))}
@@ -33,14 +32,13 @@ function Home() {
   
         <div id="contact" className="contact-section">
           <h2>צרו קשר</h2>
-          <p><a href="None">bookings@travelagency.com</a> :אימייל 📧</p>
-          <p><a href="None">+123 456 7890</a> :טלפון 📞</p>
+          <p><a href="mailto:bookings@travelagency.com">bookings@travelagency.com</a> :אימייל 📧</p>
+          <p><a href="tel:+1234567890">+123 456 7890</a> :טלפון 📞</p>
           <p className="note">!אנחנו פה לעזור לך לסגור את ההרפתקאה הבאה שלך. אמור לנו כיצד נוכל לעזור</p>
         </div>
       </div>
     </>
   );
-  
 }
 
 export default Home;

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './OfferPage.css';
 
-const API_URL = "https://travel-backend.onrender.com/api/offers";
+const API_URL = "https://travel-backend-hld3.onrender.com/api/offers";
 
 function OfferPage() {
   const { id } = useParams();
@@ -22,7 +22,7 @@ function OfferPage() {
     e.preventDefault();
   
     try {
-      await axios.post("http://localhost:5000/api/book", {
+      await axios.post("https://travel-backend-hld3.onrender.com/api/book", {
         name: form.name,
         email: form.email,
         phone: form.phone,
@@ -36,7 +36,6 @@ function OfferPage() {
       alert("❌ לא יכלנו לשלוח את הבקשה. אנא נסו שוב.");
     }
   };
-  
 
   if (!offer) return <p>טוען...</p>;
 
@@ -48,7 +47,7 @@ function OfferPage() {
       <h3>${Number(offer.price).toFixed(2)}</h3>
 
       <form onSubmit={handleSubmit} className="booking-form">
-        <h4>Book This Trip</h4>
+        <h4>שלחו בקשה</h4>
         <input name="name" placeholder="שם" value={form.name} onChange={handleChange} required />
         <input name="email" placeholder="אימייל" value={form.email} onChange={handleChange} required />
         <input name="phone" placeholder="מספר טלפון" value={form.phone} onChange={handleChange} required />
