@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './OfferPage.css';
 
-const API_URL = 'http://localhost:5000/api/offers';
+const API_URL = "https://travel-backend.onrender.com/api/offers";
 
 function OfferPage() {
   const { id } = useParams();

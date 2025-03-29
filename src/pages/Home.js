@@ -4,7 +4,7 @@ import OfferCard from '../components/OfferCard';
 import Navbar from '../components/Navbar';
 import './Home.css';
 
-const API_URL = 'http://localhost:5000/api/offers';
+const API_URL = "https://travel-backend.onrender.com/api/offers";
 
 function Home() {
   const [offers, setOffers] = useState([]);
